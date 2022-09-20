@@ -7,7 +7,17 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 		<link rel="icon" type="image/x-icon" href="images/work.ico">
 		<style type="text/css"> html { font-family: Liberation sans;} a {	text-decoration: none;} </style>
-		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+		<script>
+			function requestPage(url) {
+				let xhttp = new XMLHttpRequest();
+				xhttp.open('GET', 'https://walterdecastro.github.io/curriculum/blog.html')
+				xhttp.send()
+
+				console.log(xhttp)
+			}
+		</script>
+		
 	</head>
 
 	<body style="padding: 15px; color: #2F4F4F;" class="bg-warning">
