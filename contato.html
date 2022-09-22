@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 	</head>
-	<body class="bg-warning" style="padding: 15px; color: #2F4F4F;">
+	<body class="bg-warning" style="padding: 15px; color: #2F4F4F;" onload="requestPage('http://walterdecastro.epizy.com/mail.php')">
 	<br>
 		<div class="bg-white" style="padding: 10px;">
 			<div class="row" style="text-align: center;">
@@ -28,8 +28,15 @@
 							<input type="text" name="subject"><br><br>
 							<p>Mensagem:</p>
 							<textarea name="message"></textarea><br><br>
-							<input type="submit" name="">
+							<input type="submit" name="submit">
 						</form>
+						<script>
+							function requestPage(url) {
+								let xhttp = new XMLHttpRequest();
+								xhttp.open('POST', url)
+								xhttp.send()
+							}
+		</script>
 					</div>
 				</div>
 				<br>
