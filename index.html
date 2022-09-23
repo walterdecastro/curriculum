@@ -337,7 +337,7 @@
 				<div class="col">
 					<p>by: Walter de Castro &copy; | v2.0.2</p>
 					<p id="data"></p>
-					<button class="btn btn-sm btn-success" onclick="imprimir()">Imprimir</button>
+					<button class="btn btn-sm btn-success" onclick="window.print()">Imprimir</button>
 				</div>
 			</div>
 	
@@ -347,10 +347,5 @@
 		const d = new Date;
 		let textDate = d.toLocaleDateString();
 		document.getElementById('data').innerHTML = textDate;
-	</script>
-	<script type="text/javascript">
-		function imprimir() {
-			window.print();
-		}
 	</script>
 </html>
