@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Walter de Castro | Portfólio</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Walter de Castro">
+	<meta name="description" content="Currículo Profissional/Portifólio">
+	<meta name="keywords" content="programação, desenvolvedor, desenvolvimento, web, github">
+	<meta http-equiv="refresh" content="180">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<style>
+		body {
+			font-family: Liberation sans;
+		}
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		.menuItem:hover li{
+			background-color: #198754;
+			color: #FFF;
+			}
+		@media (max-width: 640px) {
+			#contatos {
+				display: none;
+			}
+		}
+	</style>
+
+	
+</head>
+<body>
+	<!--principal container-->
+	<div class="container-fluid bg-light">
+		<!--header-->
+		<div class="row bg-success p-3 text-center">
+			<div class="col">
+				<h1>Walter de Castro | <b>Portfólio</b></h1>
+			</div>
+				<div class="row">
+					<div class="col">
+						<p style="color: #FFF;">Estudante de Ciência da Computação</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<ul class="nav nav-tabs justify-content-end">
+							<li class="nav-item">
+								<a class="nav-link link-light disabled" href="https://walterdecastro.github.io/curriculum/index.html" target="_blank">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link link-light disabled" href="https://walterdecastro.github.io/curriculum/blog.html" target="_blank">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<!--header-->
+
+		<!--blog content-->
+		
+		<!--blog content-->
+
+		<!--social icons-->
+		<div class="row m-4">
+			<div class="col-sm-2"></div>
+			<div class="col-sm text-center">
+				<a href="https://twitter.com/walter_dcastro" target="_blank"><i class="bi bi-twitter" style="font-size: 1.5rem; color: #1DA1F2;"></i></a>
+				<a href="https://github.com/walterdecastro" target="_blank"><i class="bi bi-github p-4" style="font-size: 1.5rem; color: #000;"></i></a>
+				<a href="https://www.linkedin.com/in/walterdecastrocwb/" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.5rem; color: #0E76A8;"></i></a>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+		<!--social icons-->
+
+		<!--footer-->
+		<div class="row bg-success mt-2 p-2 text-center" style="color: #FFFFFF;">
+			<div class="col">
+				<br>
+				<p>by: Walter de Castro &copy; | v4.0.0</p>
+				<p id="data"></p>
+			</div>
+		</div>
+		<!--footer-->
+
+	</div>
+	<!--principal container-->
+
+
+</body>
+	<script type="text/javascript">
+		const d = new Date;
+		let textDate = d.toLocaleDateString();
+		document.getElementById('data').innerHTML = textDate;
+	</script>
+</html>
